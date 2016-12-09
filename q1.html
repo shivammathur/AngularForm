@@ -1,0 +1,51 @@
+<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 qs">
+	<label>Start by telling us a bit about yourself</label>
+</div>
+<fieldset>
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<!-- <label for="name">Name</label>-->
+	</div>    
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">           
+		<input type="text" placeholder="Your full name" class="form-control" id="name" name="name" ng-model="formData.name" required>
+	</div>
+	<div id="nameerror" class="error">Your full name is required.</div>         
+</fieldset>	
+<fieldset>
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<!-- <label for="email">Email</label>-->
+	</div>    
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">           
+		<input type="text" placeholder="Your email" class="form-control" id="email" name="email" ng-model="formData.email" required>
+	</div>
+	<div id="emailerror" class="error">Your email is required.</div>         
+	<div id="emailerror1" class="error">Enter valid Email.</div>          
+</fieldset>
+<fieldset>
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<!-- <label for="phone">Mobile No.</label>-->
+	</div>    
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">  
+		<div class="input-group">
+			<span class="input-group-addon" id="basic-addon1">+91</span>
+			<input type="text" maxlength="10" placeholder="Your mobile no" class="form-control" id="phone" name="phone" ng-model="formData.phone" required>
+		</div> 
+	</div>
+	<div id="phoneerror" class="error">Your mobile no is required.</div>    
+	<div id="phoneerror1" class="error">Enter valid mobile number.</div>         
+</fieldset>
+<fieldset>
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<!--<label for="area">Area/Locality</label>-->
+	</div>    
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">   
+		<input type="text" placeholder="Your area or locality" class="form-control" id="area" name="area" ng-model="formData.area" required>
+	</div>
+	<div id="areaerror" class="error">Your area or locality is required.</div>    
+</fieldset>
+<fieldset>
+	<div class="col-xs-12 col-md-2 col-sm-2 col-lg-2"></div>
+	<div class="col-xs-12 col-md-8 col-sm-8 col-lg-8 btn-div">
+		<a ui-sref="form.good" class="btn btn-blue button" ng-click="checkdata()" id="form-sub">Submit</a>
+	</div>
+	<div class="col-xs-12 col-md-2 col-sm-2 col-lg-2"></div>
+</fieldset>    
